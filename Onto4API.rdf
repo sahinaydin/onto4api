@@ -1,0 +1,945 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.intalalab.com/ontologies/2025/7/onto4api/"
+     xml:base="http://www.intalalab.com/ontologies/2025/7/onto4api/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api">
+        <owl:versionIRI rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api/1.0.0"/>
+        <rdfs:comment>Ontology for Apiculture Practices</rdfs:comment>
+        <rdfs:isDefinedBy>Dr. Şahin Aydın
+Assistant Professor at Information Technologies Department in Işık University  
+Founder and Principal Researcher of INTALA LAB  
+İstanbul / Türkiye
+
+Samet Okuyan
+Agricultural Engineer
+Republic of Türkiye Ministry of Agriculture and Forestry
+Apiculture Research Institute
+Ordu / Türkiye
+
+
+Serhat Solmaz
+Agricultural Engineer
+Republic of Türkiye Ministry of Agriculture and Forestry
+Apiculture Research Institute
+Ordu / Türkiye</rdfs:isDefinedBy>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#collectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#collectedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#collectedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#collectedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#collectedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#collectedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Forager_Bee"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#housedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#housedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#housedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bee"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#housedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#laidBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#laidBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#laidBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Apilarnil"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#laidBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Laying_Worker_Bee"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#laidBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Bee"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#rearedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#rearedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#rearedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Apilarnil"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#rearedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Nurse_Bee"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#secretedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#secretedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#secretedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#secretedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#secretedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Worker_Bee"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#storedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#storedOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#storedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#storedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#storedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honeycomb"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasBioactivityLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasBioactivityLevel">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Biological activity classification of royal jelly (e.g., high, medium).</rdfs:comment>
+        <rdfs:label xml:lang="en">has bioactivity level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasColorGrade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasColorGrade">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Visual classification of honey color (e.g., amber, dark, light).</rdfs:comment>
+        <rdfs:label xml:lang="en">has color grade</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasHarvestingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasHarvestingDate">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Date on which the bee product was harvested.</rdfs:comment>
+        <rdfs:label>has harvesting date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasMoistureContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasMoistureContent">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Percentage of water content in harvested honey.</rdfs:comment>
+        <rdfs:label xml:lang="en">has moisture content</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasProteinContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasProteinContent">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Protein content percentage in pollen.</rdfs:comment>
+        <rdfs:label xml:lang="en">has protein content</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasPurity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasPurity">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Purity percentage of the propolis sample.</rdfs:comment>
+        <rdfs:label xml:lang="en">has purity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasShelfLife -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasShelfLife">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <rdfs:comment xml:lang="en">Duration of safe usability under storage.</rdfs:comment>
+        <rdfs:label xml:lang="en">has shelf life</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasStorageTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasStorageTemperature">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Recommended temperature for storing the bee product.</rdfs:comment>
+        <rdfs:label xml:lang="en">has storage temperature</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasWaxPurity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasWaxPurity">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Purity level of processed beeswax.</rdfs:comment>
+        <rdfs:label xml:lang="en">has wax purity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#hasWeight">
+        <rdfs:domain rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Weight of the product in grams.</rdfs:comment>
+        <rdfs:label xml:lang="en">has weight</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Apilarnil -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Apilarnil">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+        <rdfs:comment>The term used for male bee larvae that have not yet reached the pupal stage and are between 3-7 days old.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Apilarnil_Production_Equipments -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Apilarnil_Production_Equipments">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Bread -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Bread">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen"/>
+        <rdfs:comment>A bee product produced by honey bees when they collect pollen from the environment, store it in honeycomb cells, and ferment it.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Venom -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Venom">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Secreted_Bee_Products"/>
+        <rdfs:comment>A colorless, odorless liquid secretion produced and stored by honey bees for self-defense and to protect the colony. It is injected into a perceived threat when the bee stings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Venom_Collector_Machine -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Venom_Collector_Machine">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Venom_Production_Equipments"/>
+        <rdfs:comment>This device is used to stimulate bees with low electric current as they crawl over it, causing them to release venom. The venom is then collected for processing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Venom_Production_Equipments -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Venom_Production_Equipments">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Miscellaneous_Production_Equipment"/>
+        <rdfs:comment>A structure created by humans for the purpose of housing honey bee colonies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Secreted_Bee_Products"/>
+        <rdfs:comment>A material used by honey bees for construction purposes. Honey bees use beeswax to build honeycombs, which are used for storing honey, pollen, and rearing larvae.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Filter -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Filter">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Production_Equipments"/>
+        <rdfs:comment>Used to separate bee larvae casings and other impurities from the melted beeswax.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Melting_Tank -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Melting_Tank">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Production_Equipments"/>
+        <rdfs:comment>Old and darkened combs are melted in a double-walled melting tank to remove impurities, and the liquid wax is filtered through a fine mesh sieve. The cleaned beeswax is then poured into mold blocks for casting purposes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Mold_Block -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Mold_Block">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Production_Equipments"/>
+        <rdfs:comment>Molds used for the liquid beeswax to solidify into usable shapes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Production_Equipments -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Beeswax_Production_Equipments">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Bottom_Board -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Bottom_Board">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive"/>
+        <rdfs:comment>It is located at the base of the hive and sits on the brood chamber bottom board.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Brood_Chamber -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Brood_Chamber">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive"/>
+        <rdfs:comment>The area in the hive where the frames containing brood cells are located. This is where the larvae and pupae are typically found.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Cappings -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Cappings">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>After honey bees store honey in the comb, they seal the cells with beeswax. The thin layer of wax that seals the cell is called cappings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Cell_Builder_Colony -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Cell_Builder_Colony">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Production_Equipments"/>
+        <rdfs:comment>A colony created by taking the queen bee for the purpose of producing queen bees and royal jelly</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Collected_Bee_Products -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Collected_Bee_Products">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Drone -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Drone">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bee"/>
+        <rdfs:comment>The male honey bee whose sole function is mating. It does not have any specific tasks within the hive and is part of the age-based caste system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Drone_Brod_Comb -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Drone_Brod_Comb">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Apilarnil_Production_Equipments"/>
+        <rdfs:comment>Apilarnil is usually produced from drone bee larvae. Providing drone brood combs to the colonies encourages apilarnil production. The larvae are harvested using a vacuum harvesting machine.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Entrance_Reducer -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Entrance_Reducer">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive"/>
+        <rdfs:comment>It reduces the size of the hive entrance, reducing unwanted airflow and making it easier for the hive to defend against robbing bees and other threats.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Finisher_Colony -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Finisher_Colony">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Production_Equipments"/>
+        <rdfs:comment>Strong colonies used for royal jelly production and queen bee rearing. They are usually selected as two-story colonies. An excluder is placed between the bottom and top boxes, and the royal jelly cups are placed in the top box.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Forager_Bee -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Forager_Bee">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Worker_Bee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Foundation -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Foundation">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive"/>
+        <rdfs:comment>A thin sheet of beeswax with embossed hexagonal cells covering its entire surface, forming the base of the wax combs. Foundation frames are inserted into the hive frames to expedite the process of bees building comb using their own beeswax.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Frame -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Frame">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive"/>
+        <rdfs:comment>The name given to the frames on which honey bees build their wax comb. Frames allow the comb to be removed from the hive and facilitate movement within the hive.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honey -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Collected_Bee_Products"/>
+        <rdfs:comment>A product produced when honey bees collect nectar from nectar-producing flowers, enzymatically transform it, reduce its water content, and store it in honeycombs. It serves as the food reserve for honey bees.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bee -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bee"/>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bucket -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bucket">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>Frames containing ripened honeycombs are placed in honey buckets and taken to the honey extraction room for honey harvesting.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Extraction_Room -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Extraction_Room">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>A room where honey extraction is performed, providing bee isolation and containing honey extraction equipment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Extractor -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Extractor">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>Frames with uncapped honeycombs are placed in the honey extractor, which spins at high speed. The honey is extracted from the combs through centrifugal force and collected at the bottom of the extractor, then transferred to a honey settling tank.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+        <rdfs:comment>Honey harvesting takes place at the end of the nectar production season.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Settling_Tank -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Settling_Tank">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>The harvested honey is transferred to a settling tank where all the honey is strained. This tank may have a heater to lower the viscosity of the honey, facilitating the separation of particles within the honey.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Super -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Super">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive"/>
+        <rdfs:comment>It is added as a second layer to the hive, and honey production generally takes place in this area.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Honeycomb -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honeycomb">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>A structure in honey bee colonies composed of interconnected hexagonal cells that are used for larval rearing and storing honey and pollen. Worker bees construct this structure using beeswax secreted by them.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Larvae_Grafting_Tool -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Larvae_Grafting_Tool">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Production_Equipments"/>
+        <rdfs:comment>Used to transfer larvae from the cells to the royal jelly cups.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Laying_Worker_Bee -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Laying_Worker_Bee">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Worker_Bee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Mated_Queen -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Mated_Queen">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Bee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Miscellaneous_Production_Equipment -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Miscellaneous_Production_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Nurse_Bee -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Nurse_Bee">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Worker_Bee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Collected_Bee_Products"/>
+        <rdfs:comment>Plant reproductive structures collected by honey bees to meet their vitamin, mineral, and protein requirements, and stored in the honeycomb cells. Stored and fermented pollen is called bee bread.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Basket -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Basket">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Production_Equipments"/>
+        <rdfs:comment>A structure located on the tibia of the hind legs of worker bees where collected pollen and propolis are stored and transported to the hive.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Cleaning_Machine -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Cleaning_Machine">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Production_Equipments"/>
+        <rdfs:comment>A machine that separates pollen and accumulated beeswax crumbs and foreign particles during the pollen collection process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Drying_Machine -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Drying_Machine">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Production_Equipments"/>
+        <rdfs:comment>Harvested pollen can have a high moisture content, which can lead to spoilage. Therefore, reducing the moisture content is important. A pollen drying machine reduces the moisture content by subjecting the moist pollen to heat and airflow.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Production_Equipments -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Production_Equipments">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Trap -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Trap">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Pollen_Production_Equipments"/>
+        <rdfs:comment>Honey bees collect pollen from the environment to meet their protein, vitamin, and mineral needs. They convert the collected pollen grains into pellets and store them in pollen baskets on their hind legs. A pollen trap is designed to allow worker bees to enter but catches the pollen from their legs, causing it to fall and be harvested.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Collected_Bee_Products"/>
+        <rdfs:comment>An antimicrobial resinous bee product used by honey bees to seal cracks, sterilize the hive, and maintain air circulation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis_Extract -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis_Extract">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis_Production_Equipments"/>
+        <rdfs:comment>When raw propolis is placed in alcohol, propolis dissolves while solid particles and impurities separate. The resulting product obtained by filtering this mixture is called propolis extract.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis_Production_Equipments -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis_Production_Equipments">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis_Trap -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis_Trap">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Propolis_Production_Equipments"/>
+        <rdfs:comment>Honey bees can use propolis within the hive to prevent unwanted airflow. A propolis trap, which is a flexible plastic sheet with small holes that allow bees to pass through, creates a desired airflow that bees would want to block. Bees cover the propolis trap with propolis to obstruct the airflow. Afterward, the accumulated propolis on the traps is harvested.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Bee -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Bee">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bee"/>
+        <rdfs:comment>The only individual in a honey bee colony capable of laying diploid eggs. It sustains the colony by secreting pheromones.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Cell -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Cell">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Production_Equipments"/>
+        <rdfs:comment>cylindrical cups into which one-day-old larvae are transferred and given to starter colonies. Worker bees fill these cups with royal jelly to feed the larvae.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Excluder -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Excluder">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beehive"/>
+        <rdfs:comment>It is a device with holes that allow worker bees to pass through but prevent the queen bee from passing. It prevents the queen from laying eggs in the honey super, ensuring that the frames in the honey super contain honey rather than brood.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Refractometer -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Refractometer">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>A device used to determine the moisture content of honey to ensure that it has sufficiently ripened before harvesting.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Robbing_Bee -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Robbing_Bee">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Forager_Bee"/>
+        <rdfs:comment>When honey bees are exposed to certain conditions such as a decrease in nectar and pollen flow, they can collectively attack other hives or sources of honey that do not belong to them. This event is called robbing, and the bees engaged in robbing are called robbing bees.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Secreted_Bee_Products"/>
+        <rdfs:comment>The larval food used by honey bees for larval rearing. Due to its high bioactivity, nutritional content, and water content, it spoils quickly. It is consumed or used directly without being stored within the hive.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Harvesting_Spoon -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Harvesting_Spoon">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Production_Equipments"/>
+        <rdfs:comment>Used to harvest royal jelly from the cups.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Production_Equipments -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Production_Equipments">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+        <rdfs:comment>It is the larval food produced by honey bees for feeding their larvae. To produce royal jelly, a colony&apos;s queen bee is taken to create a starter colony. Worker bee larvae at one day old are transferred to royal jelly cups, which are then given to the starter colonies. After 24 hours, the transfer cups are given to nurse colonies. After 48 hours in the nurse colonies, the royal jelly is harvested from the cups using a royal jelly harvesting spoon</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Secreted_Bee_Products -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Secreted_Bee_Products">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Transfer_Frame -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Transfer_Frame">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Royal_Jelly_Production_Equipments"/>
+        <rdfs:comment>A frame that carries the royal jelly cups.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Uncapping_Fork -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Uncapping_Fork">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>Tools used to remove the cappings from sealed honeycombs on the uncapping table.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Uncapping_Knife -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Uncapping_Knife">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>Tools used to remove the cappings from sealed honeycombs on the uncapping table.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Uncapping_Table -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Uncapping_Table">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Production_Equipments"/>
+        <rdfs:comment>A platform used for positioning the frames and removing the cappings to expose the honey. The honey that drains beneath the uncapping table is called capping honey.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Vacuum_Harvesting_Machine -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Vacuum_Harvesting_Machine">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Apilarnil_Production_Equipments"/>
+        <rdfs:comment>A machine used to harvest larvae from the cells by vacuuming the contents of the honeycomb cells.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Virgin_Queen -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Virgin_Queen">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Queen_Bee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Wintering_Bee -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Wintering_Bee">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Nurse_Bee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.intalalab.com/ontologies/2025/7/onto4api#Worker_Bee -->
+
+    <owl:Class rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Worker_Bee">
+        <rdfs:subClassOf rdf:resource="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bee"/>
+        <rdfs:comment>Responsible for the production of all bee products in a bee colony, defense of the colony, and rearing of larvae.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Bee_Products"/>
+            <rdf:Description rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Beekeeping_Equipments"/>
+            <rdf:Description rdf:about="http://www.intalalab.com/ontologies/2025/7/onto4api#Honey_Bee"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
